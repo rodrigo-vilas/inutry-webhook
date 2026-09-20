@@ -3,7 +3,7 @@ const app = express();
 app.use(express.json());
 
 const VERIFY_TOKEN = 'inutry2024';
-const MAKE_WEBHOOK_URL = 'https://hook.us2.make.com/zgqo6kphj7u4iksqdt4c3n16nvvbk1sy';
+const MAKE_WEBHOOK_URL = 'https://hook.us2.make.com/s2urw4m5fjcbze03hpe3vbmu1kldaol5';
 
 app.get('/', (req, res) => {
   const mode = req.query['hub.mode'];
