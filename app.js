@@ -18,6 +18,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', async (req, res) => {
+  console.log('POST recebido:', JSON.stringify(req.body));
   res.sendStatus(200);
   
   try {
@@ -26,6 +27,7 @@ app.post('/', async (req, res) => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(req.body)
     });
+    console.log('Encaminhado para Make com sucesso');
   } catch (err) {
     console.error('Erro ao encaminhar para Make:', err);
   }
